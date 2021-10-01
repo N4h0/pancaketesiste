@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+	<head>
+		<title>Contact Us</title>
+		<meta charset="utf-8" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styles.css">
+        
+        <style>
+            /* Mobile Responsive css */
+            @media screen and (max-width: 767px) {
+                input.send-message {
+                    font-size: 15px;
+                    width:85%;
+                }
+                ul.infos {
+                    padding-top: 1.5em;
+                    padding-left: 1em;
+                    line-height: 1.50;
+                }
+                form.myForm {
+                    width:80%
+                }
+                .form-container {
+                    flex-wrap: wrap;
+                }
+            }
+            @media screen and (min-width: 767px) and (max-width: 1024px) {
+                input.send-message {
+                    font-size: 15px;
+                    width:65%;
+                }
+                .form-container {
+                    flex-wrap: nowrap;
+                }
+                ul.infos {
+                    padding-top: 1.5em;
+                    padding-left: 1em;
+                    line-height: 1.50;
+                }
+            }
+
+            @media screen and (min-width: 318px) and (max-width: 374px) {
+                .navbar-contact a {
+                font-size: 13px;
+                padding: 10px 10px;
+                }
+
+                .navbar-contact {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                height:45px;
+                margin-bottom:20px;
+                }
+
+                p {
+                    line-height: 1.50;
+                }
+
+                .body-contact {
+                    line-height:1.4;
+                }
+            }
+
+            @media screen and (min-width: 375px) and (max-width: 1024px) {
+                .navbar-contact {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    height:45px;
+                    margin-bottom:20px;
+                }
+
+                .navbar-contact a {
+                    font-size: 17px;
+                    padding: 10px 10px;
+                }
+
+                p {
+                    line-height: 1.50;
+                }
+            }
+
+            /* End responsive css */
+        </style>
+    </head>
+    
+    <body class="body-contact">
+     <div class="navbar-contact">
+        <nav>
+          <a href="../pages/index.html">Home</a> 
+          <a href="../pages/menu.html">Menu</a> 
+          <a href="../pages/about.html">About</a> 
+          <a href="../pages/contact.html">Contact</a>
+          <a href="../pages/report.html">Report</a>
+        </nav>
+    </div> 
+  
+        
+        <main>
+            <div class="main-div">
+                <section id="main-content">
+                    
+                    <header>
+                        <div class="logo">
+                            <img src="../img/pancake-logo.png" alt="An image showing a pancake logo, included for aesthetic reasons">
+                            <h2>We'd love to hear from you.</h2>
+                        </div>
+                    
+                        <p>We encourage you to send us a message below if you have any questions or feedback.</p>
+                    </header>
+                    
+
+                    <!-- Contact div -->
+                    <div class="form-container">
+                        <!--Contact form-->
+                        <section id="contact-form">
+                            <form method="POST" class="myForm" >
+                                <div class="fields">
+                                    <div class="form-group">
+                                        <label for="formGroupNameInput">Name</label>
+                                        <input type="text" class="form-control" id="formGroupNameInput" placeholder="Enter Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                                    <div class="form-group"></div>
+                                        <label for="exampleFormControlMessageArea">Message</label>
+                                        <textarea class="form-control" id="exampleFormControlMessageArea" rows="3"></textarea>
+                                </div>
+                                <input type="submit" class="send-message" value="Send Message">
+                            </form>
+                        </section>
+                        <!-- end contact form-->
+
+                        <!-- info list -->
+                        <section id="contact-info">
+                            <ul class="infos">
+                                <li class="info-point">
+                                    PancakeHouse
+                                    <br>
+                                    Pilestredet Park 35
+                                    <br>
+                                    Oslo, Norway
+                                </li>
+                                <li class="info-point">
+                                    (+47) 000-00-000
+                                </li>
+                                <li class="info-point">
+                                    pancakehouse@gmail.com
+                                </li>
+                                <li class="info-point">
+                                    facebook.com/pancakehouse
+                                </li>
+                                <li class="info-point">
+                                    instagram.com/pancakehouse
+                                </li>
+                            </ul>
+                        </section>
+                        <!-- end info list-->
+                    </div>
+                    <!--End contact div-->    
+
+                </section>
+            </div>
+        </main>
+        
+        
+        <footer></footer>
+    </body>

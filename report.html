@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+  <title>Report</title>
+
+<style>
+  
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', 'Playfair Display', serif;
+}
+
+.container{
+    width: 60%;
+    margin: 1rem auto;
+    padding: 2rem;
+    text-align: justify;
+    transition: all 0.3s;
+}
+.container p{
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+      /* For mobile phones: */
+      .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      }
+
+      .navbar a {
+      font-size: 17px;
+      padding: 10px 10px;
+      }
+
+      button {
+      font-size: 14px;
+      width:65%;
+        
+      }
+      button:hover {
+      font-size: 14px;
+      width:65%;
+      }
+    }
+
+  @media screen and (min-width: 318px) and (max-width: 374px) {
+    .navbar a {
+    font-size: 14px;
+    padding: 10px 10px;
+    }
+
+    .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+
+    h1 {
+      font-size: 1.2em;
+    }
+    h2 {
+      font-size: 1em;
+    }
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 667px) {
+    h1 { 
+      font-size: 1.4em;
+    }
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+  
+  </style>
+  </head>
+
+  <body>  
+
+    <div class="navbar" style="margin: auto; align-items: center; font-family:'Playfair Display', serif;">
+      <nav>
+        <a href="../pages/index.html">Home</a> 
+        <a href="../pages/menu.html">Menu</a> 
+        <a href="../pages/about.html">About</a> 
+        <a href="../pages/contact.html">Contact</a>
+        <a href="../pages/report.html">Report</a>
+      </nav>
+    </div>   
+    <div>
+      <br>
+      <br>
+      <br>
+    </div>
+    
+    <h2>&#128196;</h2>
+    <h1>Report - Pancake House </h1>
+    <hr>
+    <div class="container">
+<p><strong>Overview</strong>
+This page uses semantic tags to separate content and increase accessability - such as "main", "section" and "nav" - so that it is optimized for SEO/crawlable and accessable for those with visual impairments or users without mouse access. CSS & HTML comments are also included to increase the readibility of the code.
+The website had to be responsive for all devices, therefore we used @mediascreen CSS thouroughly in all the pages.
+</p>
+<hr>
+
+<p><strong>Index.html (home-page) validation:</strong>
+W3S-validator check results gave 3 errors; the first one was about avoiding viewport values that prevent users from resizing documents. This is fixed by removing the user-scalable value which was set to “no”. The second issue was about p-element not being allowed as a child-element under h2-element. This one is fixed after validation. The last issue was about the “menu” button on index.html: "The element button must not appear as a descendant of p-element.”. This one is also fixed by replacing the element. In order to make the index page more user-friendly, different region identifiers and labels were used such as nav-label, and region names "main" and "footer".
+</p>
+<hr>
+
+<p><strong>Menu.html page validation:</strong>
+  The accessibility checker initially gave me 1 error and 2 warnings. 
+  The warning was regarding the <code>user-scalable</code> parameter for the <code>meta</code> tag. 
+  <code>User-scalable</code> was set to “no” meaning users can’t scale or zoom the page content on mobile devices. 
+  I fixed this by removing the parameter. 
+  The other warning stated that the last <code>section</code> on the page (the allergens box) lacked headings. 
+  I fixed this by using an <code>aside</code> tag instead of <code>section</code> 
+  as the content inside is only indirectly related to the surrounding content.  
+  The error I got was due to an unclosed <code>main</code> tag. I fixed this by closing the tag.  
+</p>
+<hr> 
+
+<p><strong>About.html page validation:</strong>
+The acessability checker did not discover any problems with the about page. When validating, a space was discovered in an image name. This was changed to the "_"-character. 
+</p>
+<hr>
+<p><strong>Contact.html page validation:</strong>
+The only problem discovered by the accessability checker for this page was that the img tag (pancake-logo.png) lacked an alt attribute. This is fixed in the final version.  
+</p>
+<hr>
+
+<p><strong>Css-stylesheet validation:</strong>
+  Css Styles page was validated using the W3C CSS Validator. According to the Validator, no errors were observed in the Css code. In addition, the css code works in harmony with other pages, without any bugs or problems.
+</p>
+<br>
+<p style="text-align: center;">
+  ✿*ﾟ‘ﾟ･✿.｡.:* *.:｡✿*ﾟ’ﾟ･✿.｡.:* *.:｡✿
+</p>
+
+<footer aria-label="Footer: 2021 Team G33 - Data1200" style="background-color: white;">© 2021 Team G33 - Data1200 </footer>
+
+    </div>
+
+   
+
+</body>
+</html>
